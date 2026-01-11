@@ -14,5 +14,12 @@
 - Metric: Exact Match (EM)
 - Result: **0.23 (46/200)**
 
-## Progress Log
-- 2026-01-11: Base evaluation done (EM=0.23), demo is runnable.
+Command:
+```bash
+python -m src.eval.eval_chartqa \
+  --eval_jsonl data/processed/chartqa_val.jsonl \
+  --model_id Qwen/Qwen2-VL-2B-Instruct \
+  --max_samples 200 \
+  --out_path outputs/chartqa_base_eval.json
+
+
